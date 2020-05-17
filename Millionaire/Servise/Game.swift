@@ -13,6 +13,7 @@ class Game {
     var gameSession: GameSession?
     var gameHistory: [GameSession] = []
     let caretaker = GameCaretaker()
+    var gameOrderOfQuestions: OrderOfQuestions = .normal
     
     private init() {}
     

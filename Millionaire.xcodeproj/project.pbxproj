@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		924245222469CBF2002B7B1C /* GameSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924245212469CBF2002B7B1C /* GameSceneDelegate.swift */; };
+		9258A50D24709F810086E6EC /* IndexOfQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A50C24709F810086E6EC /* IndexOfQuestionStrategy.swift */; };
+		9258A50F2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A50E2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift */; };
+		9258A5112470A4260086E6EC /* OrderOfQuestions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A5102470A4260086E6EC /* OrderOfQuestions .swift */; };
+		9258A5132470A66C0086E6EC /* RandomIndexOfQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A5122470A66C0086E6EC /* RandomIndexOfQuestionStrategy.swift */; };
+		9258A5152470B3FD0086E6EC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A5142470B3FD0086E6EC /* SettingViewController.swift */; };
+		9258A5182471580B0086E6EC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A5172471580B0086E6EC /* Observable.swift */; };
 		92616A84246772A3001D6F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92616A83246772A3001D6F71 /* AppDelegate.swift */; };
 		92616A86246772A3001D6F71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92616A85246772A3001D6F71 /* SceneDelegate.swift */; };
 		92616A88246772A3001D6F71 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92616A87246772A3001D6F71 /* StartViewController.swift */; };
@@ -24,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		924245212469CBF2002B7B1C /* GameSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneDelegate.swift; sourceTree = "<group>"; };
+		9258A50C24709F810086E6EC /* IndexOfQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexOfQuestionStrategy.swift; sourceTree = "<group>"; };
+		9258A50E2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalOrderOfQuestionsStrategy.swift; sourceTree = "<group>"; };
+		9258A5102470A4260086E6EC /* OrderOfQuestions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderOfQuestions .swift"; sourceTree = "<group>"; };
+		9258A5122470A66C0086E6EC /* RandomIndexOfQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomIndexOfQuestionStrategy.swift; sourceTree = "<group>"; };
+		9258A5142470B3FD0086E6EC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9258A5172471580B0086E6EC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		92616A80246772A3001D6F71 /* Millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92616A83246772A3001D6F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92616A85246772A3001D6F71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +63,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9258A50B24709F600086E6EC /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				9258A5102470A4260086E6EC /* OrderOfQuestions .swift */,
+				9258A50C24709F810086E6EC /* IndexOfQuestionStrategy.swift */,
+				9258A50E2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift */,
+				9258A5122470A66C0086E6EC /* RandomIndexOfQuestionStrategy.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		9258A516247157DB0086E6EC /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				9258A5172471580B0086E6EC /* Observable.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		92616A77246772A3001D6F71 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +145,11 @@
 		92CADC4D2468065E0048A1EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9258A50B24709F600086E6EC /* Strategy */,
+				9258A516247157DB0086E6EC /* Observer */,
 				92616A87246772A3001D6F71 /* StartViewController.swift */,
 				92CADC4E24681A2F0048A1EE /* GameViewController.swift */,
+				9258A5142470B3FD0086E6EC /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,11 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9258A5182471580B0086E6EC /* Observable.swift in Sources */,
 				92CADC4F24681A2F0048A1EE /* GameViewController.swift in Sources */,
+				9258A5112470A4260086E6EC /* OrderOfQuestions .swift in Sources */,
 				924245222469CBF2002B7B1C /* GameSceneDelegate.swift in Sources */,
 				928C0027246B50B3004F30CC /* GameCaretaker.swift in Sources */,
 				92616A88246772A3001D6F71 /* StartViewController.swift in Sources */,
+				9258A5152470B3FD0086E6EC /* SettingViewController.swift in Sources */,
+				9258A5132470A66C0086E6EC /* RandomIndexOfQuestionStrategy.swift in Sources */,
+				9258A50F2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift in Sources */,
 				92CADC4B246806250048A1EE /* Question.swift in Sources */,
+				9258A50D24709F810086E6EC /* IndexOfQuestionStrategy.swift in Sources */,
 				92616A84246772A3001D6F71 /* AppDelegate.swift in Sources */,
 				92CADC5224681E270048A1EE /* UIView+Layer.swift in Sources */,
 				92616A86246772A3001D6F71 /* SceneDelegate.swift in Sources */,
