@@ -1,11 +1,3 @@
-//
-//  Question.swift
-//  Millionaire
-//
-//  Created by Денис Баринов on 10.5.20.
-//  Copyright © 2020 Денис Баринов. All rights reserved.
-//
-
 import UIKit
 
 struct Question {
@@ -17,7 +9,7 @@ struct Question {
     var answer: String
     var friendAnswer: String
     var audienceHelp: String
-    
+
     init(question: String, option1: String, option2: String, option3: String, option4: String, answer: String, friendAnswer: String, audienceHelp: String) {
         self.question = question
         self.option1 = option1

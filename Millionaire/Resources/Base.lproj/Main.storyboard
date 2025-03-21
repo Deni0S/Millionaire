@@ -16,18 +16,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="fXi-qf-hfc">
-                                <rect key="frame" x="152" y="353.5" width="110" height="189"/>
+                                <rect key="frame" x="94" y="278.5" width="226" height="339"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2l-h9-avL">
-                                        <rect key="frame" x="19.5" y="0.0" width="71" height="39"/>
+                                        <rect key="frame" x="77.5" y="0.0" width="71" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Играть"/>
                                         <connections>
                                             <segue destination="ztp-6w-GZ0" kind="show" identifier="startGameSegue" id="2ix-Xl-HHA"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vh-vf-o3z">
+                                        <rect key="frame" x="0.0" y="150" width="226" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Добавить свой вопрос"/>
+                                        <connections>
+                                            <segue destination="SNq-t6-gWJ" kind="show" id="Y35-fn-yH3"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmb-p6-mYP">
-                                        <rect key="frame" x="0.0" y="150" width="110" height="39"/>
+                                        <rect key="frame" x="58" y="300" width="110" height="39"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Настройки"/>
                                         <connections>
@@ -101,6 +109,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xn-xL-WV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="903" y="473"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="hxr-RR-E5s">
+            <objects>
+                <tableViewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="SNq-t6-gWJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lhe-wp-4Ml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="301" id="AO6-nc-R47">
+                                <rect key="frame" x="0.0" y="28" width="414" height="301"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AO6-nc-R47" id="LRb-xi-iu3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="301"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SNq-t6-gWJ" id="IgS-ND-ddc"/>
+                            <outlet property="delegate" destination="SNq-t6-gWJ" id="oYH-zm-1Xt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="S7i-ZP-NXl"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ey6-9I-bJZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="136.60714285714286"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="T2J-W0-g7a">

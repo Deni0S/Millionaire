@@ -1,16 +1,8 @@
-//
-//  SettingViewController.swift
-//  Millionaire
-//
-//  Created by Денис Баринов on 17.5.20.
-//  Copyright © 2020 Денис Баринов. All rights reserved.
-//
-
 import UIKit
 
 class SettingViewController: UIViewController {
     @IBOutlet weak var orderOfQuestionsControl: UISegmentedControl!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         switch Game.shared.gameOrderOfQuestions {
@@ -21,7 +13,7 @@ class SettingViewController: UIViewController {
         }
         orderOfQuestionsControl.addTarget(self, action: #selector(orderOfQuestionsControlOnTap), for: .valueChanged)
     }
-    
+
     @objc func orderOfQuestionsControlOnTap() {
         switch self.orderOfQuestionsControl.selectedSegmentIndex {
         case 0:
@@ -31,6 +23,5 @@ class SettingViewController: UIViewController {
         default:
             return
         }
-        
     }
 }

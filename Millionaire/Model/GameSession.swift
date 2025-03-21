@@ -1,11 +1,3 @@
-//
-//  GameSession.swift
-//  Millionaire
-//
-//  Created by Денис Баринов on 12.5.20.
-//  Copyright © 2020 Денис Баринов. All rights reserved.
-//
-
 import Foundation
 
 class GameSession: Codable {
@@ -14,7 +6,7 @@ class GameSession: Codable {
     var correctAnswer: Int
     var availableFriendAnswer: Bool
     var availableAudienceHelp: Bool
-    
+
     init(moneyWin: Int, allQuestions: Int, correctAnswer: Int, availableFriendAnswer: Bool, availableAudienceHelp: Bool) {
         self.moneyWin = moneyWin
         self.allQuestions = allQuestions

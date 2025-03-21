@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		92616A8B246772A3001D6F71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92616A89246772A3001D6F71 /* Main.storyboard */; };
 		92616A8D246772A5001D6F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92616A8C246772A5001D6F71 /* Assets.xcassets */; };
 		92616A90246772A5001D6F71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92616A8E246772A5001D6F71 /* LaunchScreen.storyboard */; };
+		927B44A624719FA20009655B /* UserQuestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927B44A524719FA20009655B /* UserQuestionTableViewController.swift */; };
 		928C0023246B2C7B004F30CC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C0022246B2C7B004F30CC /* Game.swift */; };
 		928C0025246B2D24004F30CC /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C0024246B2D24004F30CC /* GameSession.swift */; };
 		928C0027246B50B3004F30CC /* GameCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C0026246B50B3004F30CC /* GameCaretaker.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		776E8A9124D0AAD2009948E7 /* Millionaire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Millionaire.entitlements; sourceTree = "<group>"; };
 		924245212469CBF2002B7B1C /* GameSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneDelegate.swift; sourceTree = "<group>"; };
 		9258A50C24709F810086E6EC /* IndexOfQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexOfQuestionStrategy.swift; sourceTree = "<group>"; };
 		9258A50E2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalOrderOfQuestionsStrategy.swift; sourceTree = "<group>"; };
@@ -44,6 +46,7 @@
 		92616A8C246772A5001D6F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92616A8F246772A5001D6F71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92616A91246772A5001D6F71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927B44A524719FA20009655B /* UserQuestionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQuestionTableViewController.swift; sourceTree = "<group>"; };
 		928C0022246B2C7B004F30CC /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		928C0024246B2D24004F30CC /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		928C0026246B50B3004F30CC /* GameCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCaretaker.swift; sourceTree = "<group>"; };
@@ -63,6 +66,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034A18CC2D8CBABB00B6420A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92616A89246772A3001D6F71 /* Main.storyboard */,
+				92616A8E246772A5001D6F71 /* LaunchScreen.storyboard */,
+				92616A8C246772A5001D6F71 /* Assets.xcassets */,
+				92616A91246772A5001D6F71 /* Info.plist */,
+				776E8A9124D0AAD2009948E7 /* Millionaire.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		034A18CD2D8CBAC800B6420A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				92616A83246772A3001D6F71 /* AppDelegate.swift */,
+				92616A85246772A3001D6F71 /* SceneDelegate.swift */,
+				924245212469CBF2002B7B1C /* GameSceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9258A50B24709F600086E6EC /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,16 +126,12 @@
 		92616A82246772A3001D6F71 /* Millionaire */ = {
 			isa = PBXGroup;
 			children = (
-				92616A83246772A3001D6F71 /* AppDelegate.swift */,
-				92616A85246772A3001D6F71 /* SceneDelegate.swift */,
-				924245212469CBF2002B7B1C /* GameSceneDelegate.swift */,
+				034A18CD2D8CBAC800B6420A /* App */,
+				034A18CC2D8CBABB00B6420A /* Resources */,
 				92CADC49246806150048A1EE /* Model */,
-				92CADC4C246806560048A1EE /* View */,
 				92CADC4D2468065E0048A1EE /* Controller */,
 				928C0028246B50BA004F30CC /* Servise */,
 				92CADC5024681DF90048A1EE /* Helpers */,
-				92616A8C246772A5001D6F71 /* Assets.xcassets */,
-				92616A91246772A5001D6F71 /* Info.plist */,
 			);
 			path = Millionaire;
 			sourceTree = "<group>";
@@ -133,15 +154,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		92CADC4C246806560048A1EE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				92616A89246772A3001D6F71 /* Main.storyboard */,
-				92616A8E246772A5001D6F71 /* LaunchScreen.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		92CADC4D2468065E0048A1EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +162,7 @@
 				92616A87246772A3001D6F71 /* StartViewController.swift */,
 				92CADC4E24681A2F0048A1EE /* GameViewController.swift */,
 				9258A5142470B3FD0086E6EC /* SettingViewController.swift */,
+				927B44A524719FA20009655B /* UserQuestionTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,8 +201,9 @@
 		92616A78246772A3001D6F71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Денис Баринов";
 				TargetAttributes = {
 					92616A7F246772A3001D6F71 = {
@@ -234,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9258A5182471580B0086E6EC /* Observable.swift in Sources */,
+				927B44A624719FA20009655B /* UserQuestionTableViewController.swift in Sources */,
 				92CADC4F24681A2F0048A1EE /* GameViewController.swift in Sources */,
 				9258A5112470A4260086E6EC /* OrderOfQuestions .swift in Sources */,
 				924245222469CBF2002B7B1C /* GameSceneDelegate.swift in Sources */,
@@ -278,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -300,6 +316,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -310,6 +327,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -360,6 +379,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -370,6 +390,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -392,15 +413,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Millionaire/Resources/Millionaire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ69ZFHT28;
-				INFOPLIST_FILE = Millionaire/Info.plist;
+				INFOPLIST_FILE = Millionaire/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DeniOS.Millionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -410,15 +433,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Millionaire/Resources/Millionaire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ69ZFHT28;
-				INFOPLIST_FILE = Millionaire/Info.plist;
+				INFOPLIST_FILE = Millionaire/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DeniOS.Millionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
