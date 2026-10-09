@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0366BF5B3079792100108046 /* Logo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0366BF5A3079792100108046 /* Logo.icns */; };
+		0366BF5F3079792800108046 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0366BF5C3079792700108046 /* LICENSE */; };
+		0366BF603079792800108046 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0366BF5D3079792700108046 /* README.md */; };
+		0366BF613079792800108046 /* README.RU.md in Resources */ = {isa = PBXBuildFile; fileRef = 0366BF5E3079792700108046 /* README.RU.md */; };
 		924245222469CBF2002B7B1C /* GameSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924245212469CBF2002B7B1C /* GameSceneDelegate.swift */; };
 		9258A50D24709F810086E6EC /* IndexOfQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A50C24709F810086E6EC /* IndexOfQuestionStrategy.swift */; };
 		9258A50F2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258A50E2470A2040086E6EC /* NormalOrderOfQuestionsStrategy.swift */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0366BF5A3079792100108046 /* Logo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Logo.icns; sourceTree = SOURCE_ROOT; };
+		0366BF5C3079792700108046 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		0366BF5D3079792700108046 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		0366BF5E3079792700108046 /* README.RU.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.RU.md; sourceTree = SOURCE_ROOT; };
 		776E8A9124D0AAD2009948E7 /* Millionaire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Millionaire.entitlements; sourceTree = "<group>"; };
 		924245212469CBF2002B7B1C /* GameSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneDelegate.swift; sourceTree = "<group>"; };
 		9258A50C24709F810086E6EC /* IndexOfQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexOfQuestionStrategy.swift; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 		034A18CC2D8CBABB00B6420A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0366BF5C3079792700108046 /* LICENSE */,
+				0366BF5D3079792700108046 /* README.md */,
+				0366BF5E3079792700108046 /* README.RU.md */,
+				0366BF5A3079792100108046 /* Logo.icns */,
 				92616A89246772A3001D6F71 /* Main.storyboard */,
 				92616A8E246772A5001D6F71 /* LaunchScreen.storyboard */,
 				92616A8C246772A5001D6F71 /* Assets.xcassets */,
@@ -234,7 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0366BF5F3079792800108046 /* LICENSE in Resources */,
+				0366BF603079792800108046 /* README.md in Resources */,
+				0366BF613079792800108046 /* README.RU.md in Resources */,
 				92616A90246772A5001D6F71 /* LaunchScreen.storyboard in Resources */,
+				0366BF5B3079792100108046 /* Logo.icns in Resources */,
 				92616A8D246772A5001D6F71 /* Assets.xcassets in Resources */,
 				92616A8B246772A3001D6F71 /* Main.storyboard in Resources */,
 			);
@@ -417,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ69ZFHT28;
 				INFOPLIST_FILE = Millionaire/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ69ZFHT28;
 				INFOPLIST_FILE = Millionaire/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
