@@ -1,7 +1,8 @@
-# Who Wants to Be a Millionaire **[🇷🇺 Rus](./README.RU.md)**
+# Who Wants to Be a Millionaire
 [![Status](https://img.shields.io/badge/status-deprecated-red)](#)
 [![Purpose](https://img.shields.io/badge/purpose-educational%20%2F%20history-blue)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Year](https://img.shields.io/badge/year-2020-lightgrey)](#)
 
 > **This project is no longer maintained.**
 > It is kept as an educational subproject for reference and historical purposes.
